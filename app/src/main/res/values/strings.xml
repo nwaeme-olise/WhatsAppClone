@@ -3,5 +3,8 @@
     <string name="whatsapp">WhatsApp</string>
     <string name="menu_item_search">Search</string>
     <string name="menu_item_more">More</string>
+   <string name="chats_tab_name">CHATS</string>
+    <string name="status_tab_name">STATUS</string>
+    <string name="calls_tab_name">CALLS</string>
 
 </resources>

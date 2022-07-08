@@ -8,45 +8,24 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+        app:elevation="0dp">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            android:layout_height="?attr/actionBarSize"
             android:layout_width="match_parent"
-            app:title="@string/whatsapp"
-            app:titleTextColor="@color/white"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
             app:menu="@menu/toolbar_menu"
+            app:title="@string/whatsapp"
 
-            app:layout_scrollFlags="scroll|enterAlways">
+            app:titleTextColor="@color/white">
 
         </androidx.appcompat.widget.Toolbar>
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/teal_green"
-            app:tabTextColor="@color/white"
-            app:tabIndicatorColor="@color/white"
-            app:tabMode="scrollable">
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="CHATS" />
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="STATUS" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="CALLS" />
-        </com.google.android.material.tabs.TabLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
@@ -54,21 +33,14 @@
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.viewpager2.widget.ViewPager2
-                android:id="@+id/viewpager"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
+            android:layout_height="wrap_content"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph" />
     </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
