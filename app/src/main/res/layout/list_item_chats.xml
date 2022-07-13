@@ -41,22 +41,20 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
+            android:textAppearance="@style/ContactText"
             app:layout_constraintEnd_toStartOf="@+id/textView_time_of_last_message"
             app:layout_constraintStart_toEndOf="@+id/circleImageView_contact"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Olisemeka"
-            tools:textColor="@color/black"
-            tools:textStyle="bold"
-            tools:textSize="16sp"/>
+            tools:text="Olisemeka"/>
 
         <TextView
             android:id="@+id/textView_time_of_last_message"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="12sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline_margin_end"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="6:35 PM"
-            tools:textSize="12sp"/>
+            tools:text="6:35 PM"/>
 
         <ImageView
             android:id="@+id/imageView_last_message_status"

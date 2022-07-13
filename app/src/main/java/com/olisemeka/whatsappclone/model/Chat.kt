@@ -4,7 +4,7 @@ import androidx.annotation.DrawableRes
 
 data class Chat(
     @DrawableRes
-    val contactImage: Int,
+    var contactImage: Int,
     val contactName: String,
     val timeOfLastMessage: String,
     val lastMessage: String,
