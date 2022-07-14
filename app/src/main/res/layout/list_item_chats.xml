@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="24dp"
-    app:contentPadding="5dp"
+    android:layout_marginTop="16dp"
+    app:contentPadding="3dp"
     app:cardElevation="0dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,21 +18,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="20dp" />
+            app:layout_constraintGuide_begin="8dp" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_margin_end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_end="20dp" />
+            app:layout_constraintGuide_end="16dp" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/circleImageView_contact"
-            android:layout_width="60dp"
+            android:layout_width="65dp"
             android:layout_height="50dp"
             app:layout_constraintStart_toStartOf="@+id/guideline_margin_start"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_contact_name"
             tools:src="@drawable/my_image" />
 
         <TextView
@@ -42,25 +42,29 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:textAppearance="@style/ContactText"
+            android:textSize="17sp"
+            android:ellipsize="end"
+            android:maxLines="1"
             app:layout_constraintEnd_toStartOf="@+id/textView_time_of_last_message"
             app:layout_constraintStart_toEndOf="@+id/circleImageView_contact"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Olisemeka"/>
+            tools:text="Olisemeka" />
 
         <TextView
             android:id="@+id/textView_time_of_last_message"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textSize="12sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView_contact_name"
             app:layout_constraintEnd_toStartOf="@+id/guideline_margin_end"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="6:35 PM"/>
+            tools:text="6:35 PM" />
 
         <ImageView
             android:id="@+id/imageView_last_message_status"
             android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginBottom="6dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="2.5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView_contact_name"
             tools:srcCompat="@drawable/double_tick" />
@@ -69,7 +73,11 @@
             android:id="@+id/textView_last_message"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="15sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline_margin_end"
             app:layout_constraintStart_toEndOf="@+id/imageView_last_message_status"
             app:layout_constraintTop_toTopOf="@+id/imageView_last_message_status"

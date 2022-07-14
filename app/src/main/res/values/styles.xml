@@ -5,10 +5,10 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="ContactText" parent="TextAppearance.AppCompat.Small">
+    <style name="ContactText" parent="TextAppearance.AppCompat.Medium">
         <item name="android:textColor">@color/black</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">16sp</item>
+
     </style>
 
 </resources>

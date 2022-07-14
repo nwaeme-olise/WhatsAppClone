@@ -23,7 +23,7 @@ class ChatListAdapter(private val context: Context, private val chatList: ArrayL
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatHolder {
-        val itemView = LayoutInflater.from(context).inflate(R.id.recyclerview_chats, parent, false)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.list_item_chats, parent, false)
         return ChatHolder(itemView)
     }
 
