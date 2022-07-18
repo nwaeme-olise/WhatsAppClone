@@ -6,22 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".ui.calls.CallsFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_calls"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/list_item_calls"/>
 
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_launcher_foreground"
-            app:tint="@color/light_green" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

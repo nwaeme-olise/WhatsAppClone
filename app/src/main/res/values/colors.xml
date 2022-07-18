@@ -10,5 +10,6 @@
     <color name="light_green">#25D336</color>
     <color name="teal_green">#128C7E</color>
     <color name="checkmark_blue">#34B7F1</color>
+    <color name="red">#DA291C</color>
 
 </resources>

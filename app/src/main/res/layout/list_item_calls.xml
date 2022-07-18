@@ -65,8 +65,7 @@
             android:layout_marginBottom="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView_contact_name"
-            app:srcCompat="@drawable/ic_baseline_arrow_outward_24"
-            app:tint="@color/teal_green" />
+            app:srcCompat="@drawable/call_missed"/>
 
         <TextView
             android:id="@+id/textView_date_and_time_of_call"
