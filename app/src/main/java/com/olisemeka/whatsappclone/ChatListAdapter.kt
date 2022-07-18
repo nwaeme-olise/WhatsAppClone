@@ -37,10 +37,7 @@ class ChatListAdapter(private val context: Context, private val chatList: ArrayL
             when (item.lastMessageStatus){
                 "sent" -> lastMessageStatusImage.setImageResource(R.drawable.tick)
                 "delivered" -> lastMessageStatusImage.setImageResource(R.drawable.double_tick)
-                "read" -> { lastMessageStatusImage.setImageResource(R.drawable.double_tick)
-                            lastMessageStatusImage
-                                .setColorFilter(ContextCompat.getColor(context, R.color.checkmark_blue), android.graphics.PorterDuff.Mode.SRC_IN)
-                }
+                "read" -> lastMessageStatusImage.setImageResource(R.drawable.blue_double_tick)
             }
         }
     }
