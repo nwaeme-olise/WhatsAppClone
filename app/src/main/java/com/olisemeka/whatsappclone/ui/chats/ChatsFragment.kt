@@ -1,4 +1,4 @@
-package com.olisemeka.whatsappclone
+package com.olisemeka.whatsappclone.ui.chats
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

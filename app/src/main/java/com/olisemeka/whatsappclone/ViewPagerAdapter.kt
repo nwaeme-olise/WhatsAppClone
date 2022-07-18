@@ -3,6 +3,9 @@ package com.olisemeka.whatsappclone
 import android.content.res.Resources
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.olisemeka.whatsappclone.ui.calls.CallsFragment
+import com.olisemeka.whatsappclone.ui.chats.ChatsFragment
+import com.olisemeka.whatsappclone.ui.status.StatusFragment
 
 class ViewPagerAdapter(fragment: Fragment): FragmentStateAdapter(fragment) {
     override fun getItemCount() = 3
