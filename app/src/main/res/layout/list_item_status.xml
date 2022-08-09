@@ -27,7 +27,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@id/guideline_margin_start"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@tools:sample/avatars"/>
+            tools:ignore="ImageContrastCheck"
+            tools:src="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/textView_contact_name"
