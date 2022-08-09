@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.olisemeka.whatsappclone.databinding.FragmentStatusBinding
+import com.olisemeka.whatsappclone.datasource.DataSource
 
 
 class StatusFragment : Fragment() {
@@ -18,6 +19,11 @@ class StatusFragment : Fragment() {
     ): View? {
         _binding = FragmentStatusBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        val adapter = StatusListAdapter(DataSource.loadStatuses())
+        binding.recyclerviewStatuses.adapter = adapter
     }
 
     override fun onDestroyView() {
