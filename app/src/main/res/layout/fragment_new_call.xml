@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.chats.NewChatFragment">
-
+    tools:context=".ui.calls.NewCallFragment">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_margin_start"
@@ -31,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="New group"
+        android:text="New group call"
         android:textAppearance="@style/ContactText"
         app:layout_constraintBottom_toBottomOf="@+id/fab_new_group"
         app:layout_constraintStart_toEndOf="@+id/fab_new_group"
@@ -70,25 +69,14 @@
         app:layout_constraintTop_toTopOf="@+id/fab_new_contact"
         app:srcCompat="@drawable/ic_qr_code" />
 
-    <TextView
-        android:id="@+id/textView_contacts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Contacts on WhatsApp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/fab_new_contact"
-        app:layout_constraintTop_toBottomOf="@+id/fab_new_contact" />
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview_contacts"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/recyclerView_new_calls"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/guideline_margin_start"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline_margin_start"
-        app:layout_constraintTop_toBottomOf="@+id/textView_contacts"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/list_item_contacts"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fab_new_contact"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

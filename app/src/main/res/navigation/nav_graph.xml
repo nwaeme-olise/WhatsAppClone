@@ -13,10 +13,18 @@
         <action
             android:id="@+id/action_viewPager_to_newChatFragment"
             app:destination="@id/newChatFragment" />
+        <action
+            android:id="@+id/action_viewPager_to_newCallFragment"
+            app:destination="@id/newCallFragment" />
     </fragment>
     <fragment
         android:id="@+id/newChatFragment"
         android:name="com.olisemeka.whatsappclone.ui.chats.NewChatFragment"
         android:label="fragment_new_chat"
         tools:layout="@layout/fragment_new_chat" />
+    <fragment
+        android:id="@+id/newCallFragment"
+        android:name="com.olisemeka.whatsappclone.ui.calls.NewCallFragment"
+        android:label="fragment_new_call"
+        tools:layout="@layout/fragment_new_call" />
 </navigation>

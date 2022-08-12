@@ -3,6 +3,7 @@ package com.olisemeka.whatsappclone.datasource
 import com.olisemeka.whatsappclone.R
 import com.olisemeka.whatsappclone.model.Call
 import com.olisemeka.whatsappclone.model.Chat
+import com.olisemeka.whatsappclone.model.Contact
 import com.olisemeka.whatsappclone.model.Status
 
 object DataSource {
@@ -63,5 +64,17 @@ object DataSource {
             Status(R.drawable.image_four, "Rhys Williams", "Yesterday, 7:30 PM")
         )
 
+    }
+
+    fun loadContacts(): ArrayList<Contact>{
+        return arrayListOf(
+            Contact(R.drawable.image_one, "Tochukwu", " "),
+            Contact(R.drawable.image_ten, "Titi", "Available"),
+            Contact(R.drawable.image_two, "Jide", "Hey, I'm on WhatsApp!"),
+            Contact(R.drawable.image_nine, "Fidel Castro", "Soy El Commandante"),
+            Contact(R.drawable.image_three, "Che Adams", "Premier League footballer"),
+            Contact(R.drawable.image_seven, "Reece James", "Invisible striker"),
+            Contact(R.drawable.image_four, "Rhys Williams", "Liverpool center-back"),
+        )
     }
 }
