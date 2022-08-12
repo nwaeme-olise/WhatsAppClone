@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.olisemeka.whatsappclone.R
 import com.olisemeka.whatsappclone.databinding.FragmentNewCallBinding
+import com.olisemeka.whatsappclone.datasource.DataSource
 
 class NewCallFragment : Fragment() {
     private var _binding: FragmentNewCallBinding? = null
@@ -18,6 +19,11 @@ class NewCallFragment : Fragment() {
     ): View? {
         _binding = FragmentNewCallBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        val adapter = NewCallListAdapter(DataSource.loadContacts())
+        binding.recyclerViewNewCalls.adapter = adapter
     }
 
     override fun onDestroyView() {
