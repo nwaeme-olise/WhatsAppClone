@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/viewPager"
         android:name="com.olisemeka.whatsappclone.ViewPager"
-        android:label="fragment_view_pager"
-        tools:layout="@layout/fragment_view_pager" >
+        android:label="@string/whatsapp"
+        tools:layout="@layout/fragment_view_pager">
         <action
             android:id="@+id/action_viewPager_to_newChatFragment"
             app:destination="@id/newChatFragment" />
@@ -20,11 +20,11 @@
     <fragment
         android:id="@+id/newChatFragment"
         android:name="com.olisemeka.whatsappclone.ui.chats.NewChatFragment"
-        android:label="fragment_new_chat"
+        android:label="@string/select_contact"
         tools:layout="@layout/fragment_new_chat" />
     <fragment
         android:id="@+id/newCallFragment"
         android:name="com.olisemeka.whatsappclone.ui.calls.NewCallFragment"
-        android:label="fragment_new_call"
+        android:label="@string/select_contact"
         tools:layout="@layout/fragment_new_call" />
 </navigation>
