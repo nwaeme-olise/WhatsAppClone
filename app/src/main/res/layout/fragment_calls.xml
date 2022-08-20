@@ -6,10 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".ui.calls.CallsFragment">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="@string/whatsapp"
+            app:titleTextColor="@color/white">
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_calls"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:layout_behavior = "com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/list_item_calls"/>
 
