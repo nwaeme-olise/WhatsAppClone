@@ -1,11 +1,12 @@
 # WhatsAppClone
 A clone of the WhatsApp Android app
----
 
 
 # Screenshots
 
 Chats
+
+
 <img src="https://user-images.githubusercontent.com/35772751/203338250-5abc22f1-8844-43cb-b2fc-ec47eef91009.png" width=500 height=1000/>
 
 Status
