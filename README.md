@@ -1,4 +1,5 @@
 # WhatsAppClone
+
 A clone of the WhatsApp Android app
 
 
@@ -13,12 +14,16 @@ To install and set up the app, follow these steps:
 
 # Libraries and Tools used
 
-AppName was built using the following tools and libraries: 
+WhatsAppClone was built using the following tools and libraries: 
 
 - Android Studio: The official IDE for Android development.
 - Viewbinding: A feature in Android that allows easy access to individual UI views/components in code.
 - Material Components for Android: A library that provides a set of pre-built UI components that follow Material Design guidelines.
 
+
+# Demo
+
+Click [here](https://appetize.io/app/zqpvrutokk4ltdvznhlckdgpkq?device=pixel4&osVersion=11.0&scale=75) to try out the app.
 
 # Screenshots
 
